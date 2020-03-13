@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Simple Python plot examples</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <form method="post">
+          Number of rows: <input type="text" name="row" value="{{para.row}}"><br>
+          Number of cols: <input type="text" name="col" value="{{para.col}}"><br>
+          Minimum value:  <input type="text" name="mini" value="{{para.mini}}"><br>
+          Maximum value:  <input type="text" name="maxi" value="{{para.maxi}}"><br>
+          Number of points:  <input type="text" name="len" value="{{para.len}}"><br>
+          <input type="submit" value="PLOT">
+        </form>
+        <h1>Plot using pandas dataframe</h1>
+        {{html1|safe}}
+        <h1>Plot using plotly offline method</h1>
+        {{html2|safe}}
+    </body>
+    <br>
+    &copy;<a href="mailto:afakeid@yahoo.com">Yuanye Wang</a>
+</html>
